@@ -1,0 +1,37 @@
+{
+  "name": "investments",
+  "version": "1.0.0",
+  "description": "developing investment project",
+  "main": "webpack.config.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server --port 6060"
+  },
+  "author": "ParameswariBala",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/animations": "^4.4.4",
+    "@angular/cdk": "^2.0.0-beta.12",
+    "@angular/common": "^4.4.0-RC.0",
+    "@angular/compiler": "^4.4.0-RC.0",
+    "@angular/core": "^4.4.0-RC.0",
+    "@angular/forms": "^4.4.0-RC.0",
+    "@angular/http": "^4.4.0-RC.0",
+    "@angular/material": "^2.0.0-beta.12",
+    "@angular/platform-browser": "^4.4.0-RC.0",
+    "@angular/platform-browser-dynamic": "^4.4.0-RC.0",
+    "@angular/router": "^4.4.0-RC.0",
+    "@types/es6-shim": "0.31.32",
+    "core-js": "^2.5.1",
+    "reflect-metadata": "0.1.10",
+    "rxjs": "5.0.1",
+    "zone.js": "0.7.2"
+  },
+  "devDependencies": {
+    "@types/core-js": "0.9.35",
+    "ts-loader": "2.0.1",
+    "typescript": "2.2.1",
+    "webpack": "2.2.1",
+    "webpack-dev-server": "2.4.1"
+  }
+}
