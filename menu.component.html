@@ -1,0 +1,26 @@
+<!--
+<ul *ngIf="citiMenu?.length>0">
+    <li *ngFor="let elem of citiMenu">{{elem.MenuName}}</li>
+</ul>
+-->
+<div *ngIf="citiMenu?.length>0">
+    <!--<button mat-fab  [routerLink]="[elem.MenuName]"
+            routerLinkActive="active"
+            *ngFor="let elem of citiMenu">
+        {{elem.MenuName}}
+    </button>-->
+    <div *ngFor="let elem of citiMenu">
+    <button mat-fab   *ngIf="elem.MenuName=='Banking'"
+            [routerLink]="[{ outlets: { left: ['Banking'] } }]"
+            routerLinkActive="active">{{elem.MenuName}}</button>
+    <button mat-fab   *ngIf="elem.MenuName=='Home Loans'"
+            [routerLink]="[{ outlets: { right: ['Home Loans'] } }]"
+            routerLinkActive="active">{{elem.MenuName}}</button>
+        <button mat-fab
+                *ngIf="elem.MenuName!='Banking'
+                && elem.MenuName!='Home Loans'"
+                >
+            {{elem.MenuName}}
+        </button>
+    </div>
+    </div>
